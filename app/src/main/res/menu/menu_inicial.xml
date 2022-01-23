@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/btnInfo"
+        android:icon="@drawable/ic_info2"
+        android:title="Informacion"
+        app:showAsAction="always" />
+
+    <item
+        android:icon="@drawable/ic_more"
+        android:title="Mas"
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/btnNuevoForm"
+                android:icon="@mipmap/ic_form"
+                android:title="@string/menuNuevoForm" />
+            <item
+                android:id="@+id/btnAyuda"
+                android:icon="@drawable/ic_help2"
+                android:title="@string/menuAyuda" />
+            <item
+                android:id="@+id/btnSalir"
+                android:icon="@drawable/ic_exit"
+                android:title="@string/menuSalir" />
+
+
+        </menu>
+
+
+    </item>
+
+
+</menu>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_margin="8dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_alignBottom="@+id/imageView3"
+                android:layout_alignTop="@+id/imageView3"
+                android:layout_toEndOf="@+id/imageView3"
+                android:layout_toRightOf="@+id/imageView3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewTipoPreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageViewDeletePreg"
+                    android:layout_toEndOf="@+id/imageView3"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:gravity="center_horizontal"
+                    android:paddingRight="8dp"
+                    android:text="Tipo de Pregunta: "
+                    android:textAlignment="viewStart"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/textViewDescrPreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewTipoPreg"
+                    android:layout_marginTop="2dp"
+                    android:layout_toEndOf="@+id/imageView3"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:gravity="center_horizontal"
+                    android:paddingRight="14dp"
+                    android:text="Descripcion"
+                    android:textAlignment="viewStart"
+                    android:textSize="11dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageViewDeletePreg"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageViewVistaPreg"
+                android:layout_toStartOf="@+id/imageViewVistaPreg"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_deletea" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_preg" />
+
+            <ImageView
+                android:id="@+id/imageViewVistaPreg"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/imageViewDeletePreg"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_visibility" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

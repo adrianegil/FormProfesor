@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAzu"
+    android:orientation="vertical"
+    tools:context="com.proyecto.gilsoft.formprofesor.app.AyudaActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/ToolbAyuda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:title="@string/menuAyuda"
+        app:titleTextColor="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="195dp"
+            android:layout_marginRight="1dp"
+            android:visibility="invisible">
+
+            <ImageButton
+                android:id="@+id/imgBackAyud"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_back"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:background="@color/colorAzulClaro">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.05"
+                android:padding="5dp"
+                android:text="@string/TextAyu"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

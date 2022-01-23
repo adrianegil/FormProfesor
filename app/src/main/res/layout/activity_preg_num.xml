@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAzu"
+    tools:context="com.proyecto.gilsoft.formprofesor.app.PregNumActivity">
+
+    <Button
+        android:id="@+id/btnInsertPregNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/btnripple2"
+        android:onClick="inserPregNum"
+        android:text="Insertar Pregunta"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Toolb1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorAzulClaro"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/editTextResultNum"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/editTextEnumPregNum"
+                android:layout_marginTop="13dp"
+                android:ems="10"
+                android:hint="Respuesta"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editTextEnumPregNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:ems="10"
+                android:hint="@string/EscribaEnunciado"
+                android:inputType="text" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Toolb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:logo="@mipmap/ic_numeric"
+        app:title="@string/DialogNumeric"
+        app:titleTextColor="@android:color/white"
+
+        />
+
+</RelativeLayout>

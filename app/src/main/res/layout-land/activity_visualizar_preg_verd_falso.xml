@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAzu"
+    tools:context="com.proyecto.gilsoft.formprofesor.app.PregSeleccionActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Toolb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:logo="@mipmap/ic_truefalse"
+        app:title="Pregunta de Verdadero o Falso"
+        app:titleTextColor="@android:color/white" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Toolb1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/colorAzulClaro"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="218dp">
+
+            <TextView
+                android:id="@+id/TextViewEnumPregVerdFalso"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:hint=""
+                android:padding="5dp"
+                android:textAlignment="viewStart"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/TextViewOpcVerdFalso3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TextViewOpcVerdFalso2"
+                android:layout_toEndOf="@+id/spinnerResp3"
+                android:layout_toRightOf="@+id/spinnerResp3"
+                android:gravity="start"
+                android:hint=""
+                android:paddingTop="9dp"
+                android:textAlignment="viewStart"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/spinnerResp1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/TextViewEnumPregVerdFalso"
+                android:text=""
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="135dp" />
+
+            <TextView
+                android:id="@+id/TextViewOpcVerdFalso1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TextViewEnumPregVerdFalso"
+                android:layout_toEndOf="@+id/spinnerResp1"
+                android:layout_toRightOf="@+id/spinnerResp1"
+                android:gravity="center_horizontal"
+                android:hint=""
+                android:paddingTop="9dp"
+                android:textAlignment="viewStart"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/spinnerResp2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/spinnerResp1"
+                android:paddingTop="13dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/TextViewOpcVerdFalso2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/TextViewOpcVerdFalso1"
+                android:layout_toEndOf="@+id/spinnerResp2"
+                android:layout_toRightOf="@+id/spinnerResp2"
+                android:gravity="center_horizontal"
+                android:hint=""
+                android:paddingTop="9dp"
+                android:textAlignment="viewStart"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/spinnerResp3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/spinnerResp2"
+                android:layout_marginTop="11dp"
+                android:text="" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/btnEvaluarPregVerdFalso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/btnripple2"
+        android:text="Evaluar Pregunta"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+</RelativeLayout>

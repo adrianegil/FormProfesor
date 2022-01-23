@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnSleccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:drawableLeft="@mipmap/ic_seleccion"
+                android:text="@string/DialogSeleccion"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/btnNumerica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:drawableLeft="@mipmap/ic_numeric"
+                android:text="@string/DialogNumeric"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/btnVerdFals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:drawableLeft="@mipmap/ic_truefalse"
+                android:text="@string/DialogVerdFals"
+                android:textAlignment="viewStart" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
